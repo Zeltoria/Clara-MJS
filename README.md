@@ -36,6 +36,8 @@ Cara ambil script ini
 ```bash
 $ git clone https://github.com/bolaxd/ballbotV2
 $ cd ballbotV2-main
+$ rm -rf Sessions
+$ rm -rf database.json
 ```
 Setting dulu di code editor kalian masing masing
 ```Setting/settings.js```
