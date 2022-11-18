@@ -17,7 +17,5 @@ export default async (m, extra) => {
 		let file = fs.readdirSync(path+b)
 		for (let u of file) if (m.message) (await import('./'+b+'/'+u)).default(m, extra);
 	}
-	for (let u of cmdd) {
-if (simi(u[0], m.command) >= q.sensitive) (await import('./'+u[1]+'.mjs')).default(m, extra);
-	}
+	for (let u of cmdd) if (simi(u[0], m.command) >= q.sensitive) (await import('./'+u[1]+'.mjs')).default(m, extra);
 };
