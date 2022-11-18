@@ -15,7 +15,7 @@ export default async (m, extra) => {
 	let cate = fs.readdirSync(path)
 	for (let b of cate.filter(_=>_.startsWith('_') && !_.endsWith('.mjs') && !_.endsWith('.json'))) {
 		let file = fs.readdirSync(path+b)
-		for (let u of file) if (m.message) (await import('./'+b+'/'+u)).default(m, extra);
+		for (let u of file) if (m.message) (await import('./'+b+'/'+u)).default(m, extra).catch(e=>console.log(e));
 	}
 	for (let u of cmdd) if (simi(u[0], m.command) >= q.sensitive) (await import('./'+u[1]+'.mjs')).default(m, extra).catch(e=>er(e));
 };
