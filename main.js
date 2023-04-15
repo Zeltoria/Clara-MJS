@@ -1,16 +1,16 @@
 process.on("uncaughtException", console.error); // MEMAKSA TETAP HIDUP WALAU ERROR
-//import { _ } from "./utils/print.mjs";
-//console.log(_.cl());
-const { default: KUNTUL_KAWAN, useMultiFileAuthState } = (await import("baileys")).default;
-import initDatabase from './utils/db/database.mjs';
-import { upsert } from "./utils/handler/index.mjs";
-import { bind } from "./utils/util/index.mjs";
-import prototypeMaker from "./utils/helper/prototype.mjs";
-import { configConn, store } from "./utils/config-connection.mjs";
-import connection_update from "./utils/connection.mjs";
-import q from "./Setting/settings.mjs";
+import baileys, { useMultiFileAuthState } from "baileys";
 import { accessSync, writeFileSync } from "fs";
 import { join } from "path";
+
+import configConnectionDefault, { store } from "./utils/lib/config.connection.lib.mjs";
+import messagesUpsertHandler from "./utils/handler/messages.upsert.handler.mjs";
+import simpleDeclarationsLib from "./utils/lib/simple.declarations.lib.mjs";
+import connectionUpdateLib from "./utils/lib/connection.update.lib.mjs";
+import prototypeHelper from "./utils/helper/prototype.mjs";
+import initDatabase from "./utils/db/database.mjs";
+import { _ } from "./utils/lib/logger.lib.mjs";
+import configs from "./Setting/settings.mjs";
 
 /*
  * @param
@@ -18,32 +18,29 @@ import { join } from "path";
  * Created By https://github.com/bolaxd/
  */
 
-async function mulai() {
-   try {
-      const { state, saveCreds } = await useMultiFileAuthState(q.session);
-      const serve = KUNTUL_KAWAN(Object.assign(configConn, { auth: state }));
-      store.bind(serve.ev);
-      bind(serve);
-      try {
-      	accessSync(join(q.session, "app_run.txt"))
-      } catch (e) {
-      	writeFileSync(join(q.session, "app_run.txt"), JSON.stringify(Date.now(), null, 2))
-      }
-      // Menangani koneksi
-      serve.ev.on("connection.update", async (iqbal) =>
-         connection_update(iqbal, serve, mulai)
-      );
-      // Menangani acara { pesan, update }
-      serve.ev.on("messages.upsert", async (iqbal) =>
-         upsert(iqbal, serve, store, q)
-      );
-      // Simpan credensial login
-      serve.ev.on("creds.update", saveCreds);
-      return serve;
-   } catch (e) {
-      console.log(e);
-   }
+async function main() {
+  try {
+    const { state, saveCreds } = await useMultiFileAuthState(configs.session);
+    const chat = baileys.default(Object.assign(configConnectionDefault, { auth: state }));
+    store.bind(chat.ev);
+    simpleDeclarationsLib(chat);
+    try {
+      accessSync(join(configs.session, "app_run.txt"));
+    } catch (e) {
+      writeFileSync(join(configs.session, "app_run.txt"), JSON.stringify(Date.now(), null, 2));
+    }
+    // Menangani koneksi
+    chat.ev.on("connection.update", async (iqbal) => connectionUpdateLib(iqbal, chat, main));
+    // Menangani acara { pesan, update }
+    chat.ev.on("messages.upsert", async (iqbal) => messagesUpsertHandler(iqbal, chat, store, configs));
+    // Simpan credensial login
+    chat.ev.on("creds.update", saveCreds);
+    return chat;
+  } catch (e) {
+    console.log(e);
+  }
 }
-prototypeMaker();
+prototypeHelper();
 initDatabase();
-mulai();
+console.log(_.p());
+main();

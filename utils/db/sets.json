@@ -1,0 +1,35 @@
+[
+  [
+    "6287839067186@s.whatsapp.net",
+    {
+      "publik": true,
+      "call": true,
+      "group": true,
+      "main": false,
+      "antitag": false,
+      "store": {
+        "createstore gblk": {},
+        "CREATESTORE GBLK": {
+          "creator": [
+            "6285882876694@s.whatsapp.net"
+          ],
+          "date": 1681425720487,
+          "update": 1681425720487
+        },
+        "gblk": {},
+        "GBLK": {
+          "creator": [
+            "6285882876694@s.whatsapp.net"
+          ],
+          "date": 1681425788679,
+          "update": 1681425788679
+        }
+      },
+      "pack": "kontol",
+      "auth": "😂😂",
+      "setmenu": "list",
+      "backup": false,
+      "lastbackup": 1681205676100
+    }
+  ]
+]

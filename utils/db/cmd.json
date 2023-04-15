@@ -1,0 +1,569 @@
+{
+  "afk": {
+    "first": "afk",
+    "category": "#bot",
+    "lastused": 1681506479695,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "addlist": {
+    "first": "addlist",
+    "category": "#database",
+    "lastused": 1681506479698,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "fbdl": {
+    "first": "facebookdl",
+    "category": "#downloader",
+    "lastused": 1681506479704,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "asahotak": {
+    "first": "asahotak",
+    "category": "#game",
+    "lastused": 1681518626637,
+    "hit": 4,
+    "hittoday": 4
+  },
+  "add": {
+    "first": "add",
+    "category": "#group",
+    "lastused": 1681506479709,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "xxsearch": {
+    "first": "xxs",
+    "category": "#internet",
+    "lastused": 1681506479716,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "styletext": {
+    "first": "styletext",
+    "category": "#maker",
+    "lastused": 1681506479724,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "bcgc": {
+    "first": "broadcastgroup",
+    "category": "#owner",
+    "lastused": 1681506479725,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "delplugin": {
+    "first": "delplugin",
+    "category": "#system",
+    "lastused": 1681506479729,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "imgtourl": {
+    "first": "imgtourl",
+    "category": "#tools",
+    "lastused": 1681506479734,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "dash": {
+    "first": "dashboard",
+    "category": "#bot",
+    "lastused": 1681506479751,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "cstore": {
+    "first": "createstore",
+    "category": "#database",
+    "lastused": 1681506479754,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "mddl": {
+    "first": "mediafiredl",
+    "category": "#downloader",
+    "lastused": 1681506479762,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "caklontong": {
+    "first": "caklontong",
+    "category": "#game",
+    "lastused": 1681506479767,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "demote": {
+    "first": "demote",
+    "category": "#group",
+    "lastused": 1681506479772,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "block": {
+    "first": "block",
+    "category": "#owner",
+    "lastused": 1681506479774,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "eval": {
+    "first": "ev",
+    "category": "#system",
+    "lastused": 1681506479782,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "mediatosticker": {
+    "first": "sticker",
+    "category": "#tools",
+    "lastused": 1681515668580,
+    "hit": 3,
+    "hittoday": 3
+  },
+  "delete": {
+    "first": "delete",
+    "category": "#bot",
+    "lastused": 1681506479803,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "dellist": {
+    "first": "dellist",
+    "category": "#database",
+    "lastused": 1681506479806,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "tta": {
+    "first": "tiktokaudio",
+    "category": "#downloader",
+    "lastused": 1681506479810,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "petakbomb": {
+    "first": "petak",
+    "category": "#game",
+    "lastused": 1681506479813,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "hidetag": {
+    "first": "ht",
+    "category": "#group",
+    "lastused": 1681506479815,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "creategroup": {
+    "first": "buatgrup",
+    "category": "#owner",
+    "lastused": 1681506479818,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "evalasync": {
+    "first": "ev2",
+    "category": "#system",
+    "lastused": 1681506480053,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "readmore": {
+    "first": "readmore",
+    "category": "#tools",
+    "lastused": 1681506480057,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "gcbot": {
+    "first": "groupbot",
+    "category": "#bot",
+    "lastused": 1681506480073,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "delstore": {
+    "first": "delstore",
+    "category": "#database",
+    "lastused": 1681506480076,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "ttv": {
+    "first": "tiktokvideo",
+    "category": "#downloader",
+    "lastused": 1681506480086,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "siapaaku": {
+    "first": "siapakahaku",
+    "category": "#game",
+    "lastused": 1681506480091,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "info": {
+    "first": "info",
+    "category": "#group",
+    "lastused": 1681506480096,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "deltmp": {
+    "first": "deltmp",
+    "category": "#owner",
+    "lastused": 1681506480101,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "exec": {
+    "first": "exc",
+    "category": "#system",
+    "lastused": 1681506480107,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "removebackground": {
+    "first": "removebg",
+    "category": "#tools",
+    "lastused": 1681506480115,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "liat": {
+    "first": "lihat",
+    "category": "#bot",
+    "lastused": 1681506480137,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "liststore": {
+    "first": "liststore",
+    "category": "#database",
+    "lastused": 1681506480141,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "yta": {
+    "first": "youtubeaudio",
+    "category": "#downloader",
+    "lastused": 1681506480151,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "susunkata": {
+    "first": "susunkata",
+    "category": "#game",
+    "lastused": 1681506480155,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "kick": {
+    "first": "kick",
+    "category": "#group",
+    "lastused": 1681506480158,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "getdatabase": {
+    "first": "getdb",
+    "category": "#owner",
+    "lastused": 1681506480459,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "shorturl": {
+    "first": "shorturl",
+    "category": "#tools",
+    "lastused": 1681506480464,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "getplugin": {
+    "first": "getplugin",
+    "category": "#system",
+    "lastused": 1681522980321,
+    "hit": 4,
+    "hittoday": 4
+  },
+  "listblock": {
+    "first": "listblock",
+    "category": "#bot",
+    "lastused": 1681506480480,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "respons": {
+    "first": "respons",
+    "category": "#database",
+    "lastused": 1681506480482,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "ytv": {
+    "first": "youtubetvideo",
+    "category": "#downloader",
+    "lastused": 1681506480486,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "tebakbendera": {
+    "first": "tebakbendera",
+    "category": "#game",
+    "lastused": 1681506480489,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "promote": {
+    "first": "promote",
+    "category": "#group",
+    "lastused": 1681506480491,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "getsession": {
+    "first": "getsesi",
+    "category": "#owner",
+    "lastused": 1681506480500,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "stickermeme": {
+    "first": "smeme",
+    "category": "#tools",
+    "lastused": 1681506480504,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "pull": {
+    "first": "pull",
+    "category": "#system",
+    "lastused": 1681506480509,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "menu": {
+    "first": "help",
+    "category": "#bot",
+    "lastused": 1681522453333,
+    "hit": 10,
+    "hittoday": 10
+  },
+  "tebakgambar": {
+    "first": "tebakgambar",
+    "category": "#game",
+    "lastused": 1681506480524,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "setdesk": {
+    "first": "setdescription",
+    "category": "#group",
+    "lastused": 1681506480526,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "join": {
+    "first": "join",
+    "category": "#owner",
+    "lastused": 1681506480528,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "stickertomedia": {
+    "first": "tomedia",
+    "category": "#tools",
+    "lastused": 1681506480532,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "push": {
+    "first": "push",
+    "category": "#system",
+    "lastused": 1681506480537,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "owner": {
+    "first": "developer",
+    "category": "#bot",
+    "lastused": 1681506480546,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "tebakkalimat": {
+    "first": "tebakkalimat",
+    "category": "#game",
+    "lastused": 1681506480549,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "setname": {
+    "first": "setname",
+    "category": "#group",
+    "lastused": 1681506480552,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "listgc": {
+    "first": "listgc",
+    "category": "#owner",
+    "lastused": 1681506480555,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "stickerwatermark": {
+    "first": "swm",
+    "category": "#tools",
+    "lastused": 1681506480558,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "setowner": {
+    "first": "setowner",
+    "category": "#system",
+    "lastused": 1681506480562,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "ping": {
+    "first": "ping",
+    "category": "#bot",
+    "lastused": 1681522550319,
+    "hit": 2,
+    "hittoday": 2
+  },
+  "tebakkata": {
+    "first": "tebakkata",
+    "category": "#game",
+    "lastused": 1681506480576,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "setpp": {
+    "first": "setpp",
+    "category": "#group",
+    "lastused": 1681506480578,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "premset": {
+    "first": "setprem",
+    "category": "#owner",
+    "lastused": 1681506480580,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "texttophoto": {
+    "first": "texttophoto",
+    "category": "#tools",
+    "lastused": 1681506480583,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "sampah": {
+    "first": "cache",
+    "category": "#bot",
+    "lastused": 1681506480594,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "tebaklirik": {
+    "first": "tebaklirik",
+    "category": "#game",
+    "lastused": 1681506480597,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "tagall": {
+    "first": "tagall",
+    "category": "#group",
+    "lastused": 1681506480600,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "savemedia": {
+    "first": "savemedia",
+    "category": "#owner",
+    "lastused": 1681506480602,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "texttospeach": {
+    "first": "texttovoice",
+    "category": "#tools",
+    "lastused": 1681506480606,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "script": {
+    "first": "source",
+    "category": "#bot",
+    "lastused": 1681506480617,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "tebaktebakan": {
+    "first": "tebaktebakan",
+    "category": "#game",
+    "lastused": 1681506480620,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "saveplugin": {
+    "first": "saveplugin",
+    "category": "#owner",
+    "lastused": 1681506480623,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "thanks": {
+    "first": "thanksto",
+    "category": "#bot",
+    "lastused": 1681506480635,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "tkimia": {
+    "first": "asahotak",
+    "category": "#game",
+    "lastused": 1681515797325,
+    "hit": 1,
+    "hittoday": 1
+  },
+  "setexif": {
+    "first": "setexif",
+    "category": "#owner",
+    "lastused": 1681515643079,
+    "hit": 1,
+    "hittoday": 1
+  },
+  "setnamebot": {
+    "first": "setnamebot",
+    "category": "#owner",
+    "lastused": 1681506480643,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "setppbot": {
+    "first": "setppbot",
+    "category": "#owner",
+    "lastused": 1681506480648,
+    "hit": 0,
+    "hittoday": 0
+  },
+  "statusbot": {
+    "first": "setstatusbot",
+    "category": "#owner",
+    "lastused": 1681506480652,
+    "hit": 0,
+    "hittoday": 0
+  }
+}
