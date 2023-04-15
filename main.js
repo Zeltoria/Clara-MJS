@@ -2,7 +2,7 @@ process.on("uncaughtException", console.error); // MEMAKSA TETAP HIDUP WALAU ERR
 import baileys, { useMultiFileAuthState } from "baileys";
 import { accessSync, writeFileSync } from "fs";
 import { join } from "path";
-
+import http from "http";
 import configConnectionDefault, { store } from "./utils/lib/config.connection.lib.mjs";
 import messagesUpsertHandler from "./utils/handler/messages.upsert.handler.mjs";
 import simpleDeclarationsLib from "./utils/lib/simple.declarations.lib.mjs";
@@ -43,4 +43,5 @@ async function main() {
 prototypeHelper();
 initDatabase();
 console.log(_.p());
+http.createServer((_, res) => res.end("UPTIMEEE ROBOT")).listen(8080)
 main();
