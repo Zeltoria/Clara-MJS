@@ -4,7 +4,7 @@ const handle = {
     let i = db.grup.findIndex((v) => v[0] == m.chat);
     if (db.grup[i][1].antibot) {
       if (up.key.id.startsWith("BAE5") && !up.key.fromMe) {
-        await conn.sendteks(
+        await cconn.sendteks(
           m.chat,
           "[ ANTI BOT ]\ngroup ini dilengkapi dengan anti bot\nanda melanggar larangan bot\nAnda berhak di kick",
           d.f1("Notifikasi Keamanan Group", "")
