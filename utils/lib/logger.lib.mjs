@@ -50,7 +50,7 @@ const loggerMessage = async (m, { conn, q, up, budy, meta }) => {
 export const _ = {
   wait: () => chalkAnimation.rainbow("Menunggu tersambung ke koneksi server..."),
   p: () =>
-    figlet.textSync(teks[6].length < 1 ? "Ballbot" : teks[6], {
+    figlet.textSync(teks[6].length < 1 ? "Clara-MD" : teks[6], {
       font: "Crawford",
       horizontalLayout: "default",
       verticalLayout: "default",

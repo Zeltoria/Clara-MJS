@@ -1,7 +1,7 @@
 {
-  "name": "ballbotv2",
+  "name": "Clara",
   "version": "3.0.0",
-  "description": "Ballbot adalah bot whatsapp yang dibuat dengan type module dan di update secara berkala",
+  "description": "Clara adalah bot whatsapp yang dibuat dengan type module dan di update secara berkala",
   "main": "main.js",
   "type": "module",
   "scripts": {

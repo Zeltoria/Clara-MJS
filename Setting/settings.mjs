@@ -2,17 +2,17 @@ import fs from "node:fs";
 import axios from "axios";
 
 export default {
-  name: "Ballbot | bolaxd", //nama sih
-  dev: ["6285728625940"],
-  developer: JSON.parse(fs.readFileSync("./Setting/owner.json")) ?? ["6285728625940"], // Cek di owner.json
+  name: "Clara - MD", //nama sih
+  dev: ["62857604516837"],
+  developer: JSON.parse(fs.readFileSync("./Setting/owner.json")) ?? ["62857604516837"], // Cek di owner.json
   moderator: JSON.parse(fs.readFileSync("./Setting/mod.json")) ?? [], // Cek di mods.json
-  prems: JSON.parse(fs.readFileSync("./Setting/prems.json")) ?? ["6285728625940"], // cek di prems.json
-  browser: ["bolaxd", "safari", "1.0.0"],
-  gcbot: ["120363041493745571@g.us"] /* Only ID */,
+  prems: JSON.parse(fs.readFileSync("./Setting/prems.json")) ?? ["62857604516837"], // cek di prems.json
+  browser: ["Clara", "Safari", "1.0.0"],
+  gcbot: ["120363028160234241@g.us"] /* Only ID */,
   thumb: "https://telegra.ph/file/56dc40ec3482f73f0f1c7.jpg",
   thumb2: "https://telegra.ph/file/56dc40ec3482f73f0f1c7.jpg",
-  emailgh: "iqbalsheila619@gmail.com", // Setting to your email github
-  usernamegh: "bolaxd", // setting to your username github
+  emailgh: "elistz21@gmail.com", // Setting to your email github
+  usernamegh: "Zeltoria", // setting to your username github
   longqr: 50000, // DURASI LAMA QR
   timeoutgame: 50000, // Waktu berakhir game
   sensitive: 0.75, // Kesensitivitas command
@@ -23,50 +23,51 @@ export default {
   akuari: "https://api.akuari.my.id", // Api botcahx
   // FAIL MESSAGES
   //INI UBAH SAJA SESUAI KEBUTUHAN [KALO BISA DITAMBAHIN]
-  connect: "Bot telah tersambung ke Konneksi server Whatsapp web",
-  sukses: "Berhasil kak :)",
-  gagal: "Kegagalan :(, mohon ulangi command anda\nJika ini salah Mohon report ke owner",
-  owner: "Fitur ini khusus owner bot ini",
-  moderr: "Fitur ini khusus moderator bot ini",
-  forgc: "Fitur ini untuk di group",
-  forpc: "Fitur ini untuk di Private chat",
+  connect: "Bot Telah Tersambung Ke Konneksi Server Whatsapp Web",
+  sukses: "Berhasil Kak :)",
+  gagal: "Gagal :(, Mohon Ulangi Perintah\nJika Ini Error Mohon Lapor Ke Owner",
+  owner: "Fitur Ini Khusus Ownerku",
+  prem: "Fitur Ini Khusus User Premium Kak",
+  moderr: "Fitur Ini Khusus Moderatorku",
+  forgc: "Fitur Ini Untuk Di Group",
+  forpc: "Fitur Ini Untuk Di Private Chat",
   leave:
-    "Hai kak, Saya diperintahkan Owner untuk keluar dari group ini :)\nMohon maaf ya kak jika bot punya banyak kesalahan :)\nGood bye kak",
-  forimg: "Kirim image lalu dengan caption command / atau kirim image dulu lalu di reply text command",
-  forteks: "Reply atau tag member atau tulis nomor member setelah command",
-  teks: "Reply teks / masukan karakter setelah command",
-  admin: "Kamu bukan orang dalam-_\nKhusus admin",
-  botadmin: "bot bukan orang dalem-_\nAdminin dong",
-  active: "Sebelom nya sudah aktif :v",
-  unactive: "Sebelom nya sudah tidak aktif :v",
-  aslink: "Pasanglah Link setelah command",
-  query: "Masukan kuery / kata kuncinya setelah command",
-  flink: "link yang anda masukan tidak valid",
-  gcouttime: "Hai Kak, Bot ini masa aktifnya telah habis, Bot akan keluar otomatis",
-  linkadm: "Admin Group tidak mengijinkan link group untuk di share :)",
-  notext: "Teks nya mana?",
-  wait: "Sek Loading...",
-  ok: "Oke Min",
+    "Hai Kak, Saya Diperintahkan Owner Untuk Keluar Dari Group Ini :)\nMohon Maaf Ya Kak Jika Aku Punya Banyak Kesalahan :)\nSayonara >,<",
+  forimg: "Kirim Foto Lalu Ketik Caption Perintah Atau Kirim Foto Dulu Lalu Di Reply Fotonya Pake Perintah",
+  forteks: "Reply Atau Tag Member Atau Ketik Nomor Member Setelah Perintah",
+  teks: "Reply Teks / Masukan Karakter Setelah Perintah",
+  admin: "Kamu Bukan Orang Penting_-\nKhusus Admin",
+  botadmin: "Aku Bukan Admin T_T\nAdminin Dulu Dong",
+  active: "Sebelumnya Emang Udah Aktif :v",
+  unactive: "Sebelumnya Emang Udah Ga Aktif :v",
+  aslink: "Masukan Link Setelah Perintah",
+  query: "Masukan Quert Atau Kata Kuncinya Setelah Perintah",
+  flink: "Link Yang Kamu Masukan Tidak Valid",
+  gcouttime: "Hai Kak, Ini Masa Aktifnya Telah Habis, Aku Akan Keluar Otomatis",
+  linkadm: "Admin Group Tidak Mengijinkan Link Group Untuk Di Share :)",
+  notext: "Teks Nya Mana?",
+  wait: "Sedang Di Proses...",
+  ok: "Oke Sayang",
   // SET WELLCOME DEFAULT
   // @sub @user @admin @jmlh
   joingc:
-    "Hai kak, saya ballbot\nSaya masuk kesini atas dasar perintah owner saya :)\nSaya out dari group ini jika owner saya memerintahkan keluar\nMohon gunakan Bot ini sebaik mungkin yaah :)",
-  fsub: "@admin Telah mengubah Subject group menjadi @sub",
-  fppgc: "@admin Telah mengubah Foto profile group",
-  fbgc: "@admin Telah membuka Group ini, Member sekarang dapat mengirim pesan ke group ini",
-  ftgc: "@admin Telah menutup Group ini, Member sekarang tidak dapat mengirim pesan ke group ini",
-  fbinp: "@admin Telah mengubah setelan group ini, Member sekarang dapat mengedit info group ini",
-  ftinp: "@admin Telah mengubah setelan group ini, Member sekarang tidak dapat mengedit info group ini",
-  fpm: "@admin Telah menaikan jabatan @user menjadi admin di group ini",
-  fdm: "@admin Telah menurunkan jabatan @user menjadi member biasa di group ini",
-  faddadmin: "@admin Telah menambahkan @user kedalam group ini\nKatakan hai kepada dia",
-  faddlink: "@user Telah bergabung ke group ini menggunakan tautan\nKatakan Hai pada dia :)",
-  faddinv: "@user Telah bergabung dengan group menggunakan undangan bot",
-  fout: "@user Tersebut Telah keluar dari group ini :(\nKatakan Bye kepada user tersebut",
-  fkick: "@admin Telah mengeluarkan @user dari Group ini :v\nYahh beban group telah keluar dri group",
-  fephe: "@admin Telah menetapkan pesan sementara pada group ini @jmlh",
-  fofephe: "@admin Telah mematikan pesan sementara pada group ini",
-  fownerjoin: "Owner Bot ini telah bergabung dengan tautan\nBeri salam dia dan hormat kepada dia :)",
+    "Hai Kak, Saya Clara\nSaya Masuk Kesini Atas Dasar Perintah Owner Saya :)\nSaya Out Dari Group Ini Jika Owner Saya Memerintahkan Keluar\nMohon Gunakan Fiturku Sebaik Mungkin Yaah :)",
+  fsub: "@admin Telah Mengubah Subject Group Menjadi @sub",
+  fppgc: "@admin Telah Mengubah Foto Profile Group",
+  fbgc: "@admin Telah Membuka Group In, Member Sekarang Dapat Mengirim Pesan Ke Group Ini",
+  ftgc: "@admin Telah Menutup Group Ini, Member Sekarang Tidak Dapat Mengirim Pesan Ke Group Ini",
+  fbinp: "@admin Telah Mengubah Setelan Group Ini, Member Sekarang Dapat Mengedit Info Group Ini",
+  ftinp: "@admin Telah Mengubah Setelan Group Ini, Member Sekarang Tidak Dapat Mengedit Info Group Ini",
+  fpm: "@admin Telah Nenaikan Jabatan @user Menjadi Admin Di Group Ini",
+  fdm: "@admin Telah Menurunkan Jabatan @user Menjadi Member Biasa",
+  faddadmin: "@admin Telah Menambahkan @user Kedalam Group Ini\nKatakan Hai Kepada Beban Grup Baru",
+  faddlink: "@user Telah Bergabung Ke Group Ini Menggunakan Tautan\nKatakan Hai Kepada Beban Grup Baru :)",
+  faddinv: "@user Telah Bergabung Dengan Group Menggunakan Undanganku",
+  fout: "@user Tersebut Telah Keluar Dari Group Ini :(",
+  fkick: "@admin Telah Mengeluarkan @user Dari Group Ini :v\nYahh Beban Group Telah Keluar",
+  fephe: "@admin Telah Menetapkan Pesan Sementara Pada Group Ini @jmlh",
+  fofephe: "@admin Telah Mematikan Pesan Sementara Pada Group In",
+  fownerjoin: "Ayangku Telah Bergabung Dengan Tautan\nBeri Salam Dan Hormat Kepada Dia :)",
   // Aesthetic
   tit: (teks) => "*------: " + teks + " :------*",
   cmd: (teks) => "  • " + teks,
@@ -80,8 +81,8 @@ export default {
   idwa: "@s.whatsapp.net",
   idgc: "@g.us",
   idst: "status@broadcast",
-  home: "https://github.com/bolaxd/ballbotV2#readme",
-  bug: "https://github.com/bolaxd/ballbotV2/issues",
+  home: "https://github.com/Zeltoria/BASE-MJS#readme",
+  bug: "https://github.com/Zeltoria/BASE-MJS/issues",
   video: "https://github.com/bolaxd/store-All/blob/main/hehe.mp4",
   // Ini Function [ Jangan di ganti yaah :) ]
   /**

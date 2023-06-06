@@ -12,7 +12,7 @@ const groupsUpdateHandler = async (m, { up, q, d, conn, bot, cache, db, find }) 
           chat.subjectOwner = senderParticipant;
           chat.subjectTime = Date.now();
           cache.set(m.chat, chat);
-          console.log(`Menyingkronkan ulang metadata pada chat: ${m.chat}`);
+          console.log(`Menyingkronkan Ulang Metadata Pada Chat: ${m.chat}`);
           if (!db.grup[g][1].detect) return;
           let text = q.fsub
             .replace("@sub", messageStubParams.join())
@@ -233,7 +233,7 @@ const groupsUpdateHandler = async (m, { up, q, d, conn, bot, cache, db, find }) 
         {
           let teks = `User : @${
             up.key.remoteJid.split("@")[0]
-          }\nBaru saja telpon bot\nMatikan Notif ini di /setting jika ini mengganggu\nHidupkan Auto block ketika telepon di /setting`;
+          }\nBaru Saja Menelpon\nMatikan Notif Ini Di /Setting Jika Ini Mengganggu`;
           conn.sendteks(q.developer[0] + q.idwa, teks, d.f1("Notifikasi Telepon", ""), {
             mentions: await conn.ments(teks)
           });
@@ -243,7 +243,7 @@ const groupsUpdateHandler = async (m, { up, q, d, conn, bot, cache, db, find }) 
         {
           let teks = `User : @${
             up.key.remoteJid.split("@")[0]
-          }\nBaru saja video call bot\nMatikan Notif ini di /setting jika ini mengganggu\nHidupkan Auto block ketika telepon di /setting`;
+          }\nBaru Saja Video Call\nMatikan Notif Ini Di /Setting Jika Ini Mengganggu`;
           conn.sendteks(q.developer[0] + q.idwa, teks, d.f1("Notifikasi Telepon", ""), {
             mentions: await conn.ments(teks)
           });
