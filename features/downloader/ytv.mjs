@@ -3,16 +3,16 @@ import axios from "axios";
 const handle = {
   say: ["youtubetvideo", "ytvideo", "ytv"],
   category: "#downloader",
-  describe: "mendownload video dari youtube",
+  describe: "Mengunduh Video Dari Youtube",
   master: async (m, { q, conn, d, repl }) => {
-    if (!m.args[0]) return repl(`Masukan url nya contoh : .${m.command} https://youtu.be/blabla 360`);
-    await repl("load...");
+    if (!m.args[0]) return repl(`Masukan Url Nya Contoh : .${m.command} https://youtu.be/NkRYof6rjm4`);
+    await repl("_Sedang Di Proses..._");
     const { data } = await axios.get(
-      `${q.akuari}/downloader/youtube3?link=${m.args[0]}&type=${m.args[1] ? m.args[1] : "360"}`
+      `https://api.zeltoria.my.id/api/download/ytmp4?url=${m.args[0]}&apikey=Elistz`
     );
     conn.sendMessage(
       m.chat,
-      { video: { url: data.mp4.download }, caption: `Judul: ${data.title}\n Size: ${data.mp4.size}` },
+      { video: { url: data.download }, caption: `Judul: ${data.title}\nSize: ${data.size}` },
       { quoted: m }
     );
   }

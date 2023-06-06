@@ -1,19 +1,19 @@
 import axios from "axios";
 
 const handle = {
-  say: ["tiktokvideo", "ttv", "ttvideo"],
+  say: ["tiktok", "tiktokvideo", "ttdl"],
   category: "#downloader",
-  describe: "mendownload video dari tiktok",
+  describe: "Mengunduh Video Dari Tiktok",
   master: async (m, { q, conn, d, repl }) => {
-    if (!m.args[0]) return repl(`Masukan url nya contoh : .${m.command} https://vm.tiktok.com/ZSJcLPNpe`);
-    if (/^(vm|vt).*tiktok/i.test(m.args[0])) return repl(`Url salah! contoh url: https://vm.tiktok.com/ZSJcLPNpe`);
-    await repl("load...");
-    const { data } = await axios.get(`${q.akuari}/downloader/tiktok3?link=${m.args[0]}`);
+    if (!m.args[0]) return repl(`Masukan Url Nya Contoh : .${m.command} https://vm.tiktok.com/ZSJcLPNpe`);
+    if (/^(vm|vt).*tiktok/i.test(m.args[0])) return repl(`Url Salah! Contoh Url: https://vm.tiktok.com/ZSJcLPNpe`);
+    await repl("_Sedang Di Proses..._");
+    const { data } = await axios.get(`https://api.alyachan.my.id/api/tiktok?url=${m.args[0]}`);
     conn.sendMessage(
       m.chat,
       {
-        video: { url: data.hasil.download_mp4 },
-        caption: `Author: ${data.hasil.name} || ${data.hasil.username}\n Judul: ${data.hasil.video_title}\n Like: ${data.hasil.like}\n Comment: ${data.hasil.comment}\n Share: ${data.hasil.share}\n Views: ${data.hasil.views}`
+        video: { url: data.data.nowatermark },
+        caption: `Author: ${data.author}\nJudul: ${data.title}\nLike: ${data.stat.like}\nComment: ${data.stat.comment}\nShare: ${data.stat.share}\nViews: ${data.stat.views}`
       },
       { quoted: m }
     );
