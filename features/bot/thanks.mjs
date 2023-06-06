@@ -1,32 +1,33 @@
 const handle = {
-  say: ["thanksto", "tqto"],
+  say: ["thankstoo", "tqto"],
   category: "#bot",
-  describe: "",
+  describe: "Menampilkan Nama Nama Orang Penting",
   master: async (m, { q, d, conn }) => {
     let teks =
-      q.tit("Thanks From") +
+      q.tit("Thanks For") +
       "\n\n" +
-      `Bot ini tidak bisa berkembang tanpa user ini\n` +
-      `${q.a6}\nAdiwajshing [ Pembuat Api baileys ]\n` +
+      `Script Ini Tidak Bisa Berkembang Tanpa Mereka\n` +
+      `${q.a6}\nAdiwajshing [ Pembuat Api Baileys ]\n` +
       `https://github.com/adiwajshing\n` +
-      `${q.a6}\nAmiruldev20 [ Sang Modifikasi baileys ]\n` +
+      `${q.a6}\nAmiruldev20 [ Sang Modifikasi Baileys ]\n` +
       `https://github.com/amiruldev20\n` +
-      `${q.a6}\nFokusdotid [ Pengarah bolaxd ]\n` +
+      `${q.a6}\nFokusdotid [ Pengarah BolaXd ]\n` +
       `https://github.com/Fokusdotid\n` +
-      `${q.a6}\nBochilTeam [ Pembuat scraper ]\n` +
+      `${q.a6}\nBochilTeam [ Pembuat Scraper ]\n` +
       `https://github.com/BochilTeam\n` +
-      `${q.a6}\nDavekgw [ Kontributor script ini ]\n` +
+      `${q.a6}\nDavekgw [ Kontributor Script Ini ]\n` +
       `https://github.com/Davekgw\n` +
-      `${q.a6}\nShionMDv [ Kontributor script ini ]\n` +
+      `${q.a6}\nShionMDv [ Kontributor Script Ini ]\n` +
       `https://github.com/ShionMDv\n` +
-      `${q.a6}\n` +
-      `Jika anda berkenan memakai script ini? anda bisa mengunjungi github saya disini\n` +
-      `https://github.com/bolaxd/ballbotV2\n`;
+      `${q.a6}\nBolaXd [ Developer Dan Base ]\n` +
+      `https://github.com/bolaxd\n` +
+      `${q.a6}\nZeltoria [ Recode Dan Nambah Fitur ]\n` +
+      `https://github.com/Zeltoria\n`
     conn.sendteks(
       m.chat,
       teks,
       m,
-      d.f2("Thanks to...", "https://github.com/bolaxd.png?size=100", "https://github.com/bolaxd/")
+      d.f2("Thanks To...", "https://i.pinimg.com/564x/60/c4/eb/60c4eb10bcbf645fbd6b808f2f6154fc.jpg?size=100", "https://github.com/Zeltoria/")
     );
   }
 };

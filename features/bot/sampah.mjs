@@ -1,12 +1,12 @@
 import fs from "fs";
 
 const handle = {
-  say: ["cache", "sampah", "tmp"],
+  say: ["sampah", "tmp"],
   category: "#bot",
-  describe: "melihat sampah/ file trojan di bot",
+  describe: "Melihat File Sampah",
   master: async (m, { q, conn }) => {
     let all = await fs.readdirSync("./TMP");
-    let teks = q.tit("Jumlah Sampah system") + "\n\n";
+    let teks = q.tit("Jumlah Sampah System") + "\n\n";
     teks += `Total : ${all.filter((v) => v.endsWith(".tmp")).map((v) => v).length} Sampah\n\n`;
     teks += all
       .filter((v) => v.endsWith(".tmp"))
