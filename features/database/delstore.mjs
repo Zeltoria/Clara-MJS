@@ -1,9 +1,9 @@
 const handle = {
   say: ["delstore"],
   category: "#database",
-  describe: "menghapus toko",
+  describe: "Menghapus Toko",
   master: async (m, { conn, q, repl, db, bot }) => {
-    if (!m.query) return repl(`Salah command!!!\nContoh : *.${m.command} jb-store`);
+    if (!m.query) return repl(`Salah Perintah!!!\nContoh : *.${m.command} jb-store`);
     let store = {
       k: m.query.toLowerCase(),
       b: m.query.toUpperCase()
@@ -11,13 +11,13 @@ const handle = {
     let i = db.set.findIndex((v) => v[0] == bot);
     if (!db.set[i][1].store[store.k] && !db.set[i][1].store[store.b])
       return repl(
-        `Store yang anda ingin delete listnya tidak ada\nAdd store dengan perintah .cstore *nama store*\nAtau cari Nama store di bot ini dengan perintah .liststore`
+        `Store Yang Ingin Kamu Delete Ga Ada`
       );
     if (!db.set[i][1].store[store.b].creator.includes(m.sender))
-      return repl(`Maaf!!!\n\nAnda siapa?\nanda bukan owner dari store ini!!!`);
+      return repl(`Maaf!!!\n\nAnda Kamu Siapa?\nKamu Kan Bukan Owner Dari Store Ini!!!`);
     delete db.set[i][1].store[store.k];
     delete db.set[i][1].store[store.b];
-    repl(`Sukses delete store : ${store.k} dari database bot ini`);
+    repl(`Sukses Delete Store : ${store.k} Dari Database`);
   }
 };
 

@@ -1,7 +1,7 @@
 const handle = {
   say: ["createstore", "cstore"],
   category: "#database",
-  describe: "membuat toko didalam bot",
+  describe: "Membuat Toko Didalam Bot",
   master: async (m, { conn, q, repl, db, bot }) => {
     if (!m.query) return repl(`Masukan Nama store yang ingin anda gunakan!!!`);
     let store = {
@@ -15,7 +15,7 @@ const handle = {
     db.set[i][1].store[store.b].date = Date.now();
     db.set[i][1].store[store.b].update = Date.now();
     repl(
-      `Sukses membuat Nama store dengan nama ${m.query} Silahkan anda memanggil store dengan nama store nya\nContoh : .drian-store`
+      `Sukses Membuat Nama Store Dengan Nama ${m.query} Silahkan Kamu Memanggil Store Dengan Nama Store Nya\nContoh : .clara-store`
     );
   }
 };
