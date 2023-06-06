@@ -4,7 +4,7 @@ const handle = {
     if (db.users[i][1].lastafk > -1) {
       conn.sendteks(
         m.chat,
-        `Kamu berhenti afk...\nSetelah alasan : ${db.users[i][1].reason}\nSelama : ${(
+        `Kamu Berhenti Afk...\nSetelah : ${db.users[i][1].reason}\nSelama : ${(
           Date.now() - db.users[i][1].lastafk
         ).timers()}`,
         m
@@ -25,9 +25,9 @@ const handle = {
         m.chat,
         `Ssstt ${
           m.react ? "@" + m.sender.split("@")[0] : ""
-        }, orang nya sedang afk...\n Kamu jangan tag dia!!!\nJangan react Dia!!!\nJangan Reply Dia!!!\nDia afk sejak : ${(
+        }, Orangnya Sedang AFK...\n Kamu Jangan Tag Dia!!!\nJangan React Dia!!!\nJangan Reply Dia!!!\nDia AFK Sejak : ${(
           new Date() - db.users[_k][1].lastafk
-        ).timers()} yang lalu\nDengan alasan : ${db.users[_k][1].reason}`,
+        ).timers()} yang lalu\nDengan Alasan : ${db.users[_k][1].reason}`,
         m,
         { mentions: [m.sender] }
       );

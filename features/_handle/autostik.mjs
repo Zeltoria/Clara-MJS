@@ -11,7 +11,7 @@ const handle = {
           name: db.set[n][1].pack,
           author: db.set[n][1].auth
         });
-        conn.sendstik(m.chat, dl, d.f1("Auto stiker group!!!", ""));
+        conn.sendstik(m.chat, dl, d.f1("Auto Stiker Group!!!", ""));
       }
       if (m.mtype === "videoMessage") {
         if ((quoted.msg || quoted).seconds >= 9) return;
@@ -19,7 +19,7 @@ const handle = {
           name: db.set[n][1].pack,
           author: db.set[n][1].auth
         });
-        conn.sendstik(m.chat, dl, d.f1("Auto stiker group!!!", ""));
+        conn.sendstik(m.chat, dl, d.f1("Auto Stiker Group!!!", ""));
       }
     }
   }

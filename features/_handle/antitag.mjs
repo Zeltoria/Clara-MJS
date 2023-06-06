@@ -16,7 +16,7 @@ const handle = {
           });
         conn.sendteks(
           m.chat,
-          `Jangan Tag Owner!!! ${m.react ? "@" + m.sender.split("@")[0] : ""}\n\nOwner Mode anti tag`,
+          `Jangan Tag Owner!!! ${m.react ? "@" + m.sender.split("@")[0] : ""}\n\nOwner Mode Anti Tag`,
           m,
           { mentions: [m.sender] }
         );

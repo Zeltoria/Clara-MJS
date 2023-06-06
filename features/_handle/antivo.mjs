@@ -9,14 +9,14 @@ const handle = {
           let dl = await m.download();
           conn.sendMessage(
             m.chat,
-            { image: dl, caption: `<Anti View Once/>\n\nMatikan anti View Once di *.info*\nCaption: ${m.text}` },
+            { image: dl, caption: `<Anti View Once/>\n\nMatikan Anti View Once Di *.info*\nCaption: ${m.text}` },
             { quoted: d.f1("Anti View Once...", "") }
           );
         } else if (/video/.test(mime)) {
           let dl = await m.download();
           conn.sendMessage(
             m.chat,
-            { video: dl, caption: `<Anti View Once/>\n\nMatikan anti View Once di *.info*\nCaption: ${m.text}` },
+            { video: dl, caption: `<Anti View Once/>\n\nMatikan Anti View Once Di *.info*\nCaption: ${m.text}` },
             { quoted: d.f1("Anti View Once...", "") }
           );
         }

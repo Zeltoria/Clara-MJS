@@ -6,12 +6,12 @@ const handle = {
       if (!m.sender.startsWith("62")) {
         await conn.sendteks(
           m.chat,
-          "[ ANTI ORANG LUAR ]\ngroup ini dilengkapi dengan anti nomor luar",
+          "[ Anti Nomor Luar ]\nGroup Ini Dilengkapi Dengan Anti Nomor Luar",
           d.f1("Notifikasi Keamanan Group", "")
         );
-        if (isAdmin) return await repl("Maaf Kamu admin ternyata");
-        if (m.isOwn) return await repl("Oh tidak, kamu ownerku");
-        if (!isBotAdmin) return await repl("Oh tidak, Bot not admin");
+        if (isAdmin) return await repl("Kalau Admin Mah Gapapa :v");
+        if (m.isOwn) return await repl("Ownerku Mah Bebas");
+        if (!isBotAdmin) return await repl("Aelah, Aku Aja Bukan Admin");
         await conn.groupParticipantsUpdate(m.chat, [m.sender], "remove");
       }
     }

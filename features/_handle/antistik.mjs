@@ -6,12 +6,12 @@ const handle = {
       if (m.mtype === "stickerMessage") {
         await conn.sendteks(
           m.chat,
-          "[ ANTI STICKER ]\ngroup ini dilengkapi dengan anti sticker\nSticker anda dihapus Bot",
+          "[ Anti Sticker ]\nGroup Ini Dilengkapi Dengan Anti Sticker\nSticker Kamu Akan Di Hapus",
           d.f1("Notifikasi Keamanan Group", "")
         );
-        if (isAdmin) return await repl("Maaf Kamu admin ternyata");
-        if (m.isOwn) return await repl("Oh tidak, kamu ownerku");
-        if (!isBotAdmin) return await repl("Oh tidak, Bot not admin");
+        if (isAdmin) return await repl("Kamu Admin, Kamu Aman");
+        if (m.isOwn) return await repl("Ownerku Mah Bebas");
+        if (!isBotAdmin) return await repl("Aku Aja Bukan Admin");
         await conn.sendMessage(m.chat, {
           delete: {
             remoteJid: m.chat,

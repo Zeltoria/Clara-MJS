@@ -9,12 +9,12 @@ const handle = {
           ? b.map((v) => [v.tilte, `.respons ${m.command.toLowerCase()}@${v.tilte}`, v.des ? v.des : ""])
           : [
               [
-                "belom ada list disini",
+                "Belum Ada List Disini",
                 "",
-                "perintah add list : *.addlist namastore@namalist@namadeskripsi* \nLakukan lah sambil mereply pesan isi"
+                "Perintah Add List : *.addlist namastore@namalist@namadeskripsi* \nLakukan Lah Sambil Mereply Pesan Isi"
               ]
             ];
-      conn.sendlist(m.chat, `List message dari ${m.command}\n`, q.name, list, m);
+      conn.sendMessage(m.chat, { text: `List Message Dari ${m.command}\n`, + list }, { quoted: m});
     }
   }
 };

@@ -6,12 +6,12 @@ const handle = {
       if (m.mtype === "audioMessage") {
         await conn.sendteks(
           m.chat,
-          "[ ANTI VOICE NOTE ]\ngroup ini dilengkapi dengan anti VN\nVN anda dihapus bot",
+          "[ Anti VN ]\nGroup Ini Dilengkapi Dengan Anti VN\nVN Kamu Akan Di Hapus",
           d.f1("Notifikasi Keamanan Group", "")
         );
-        if (isAdmin) return repl("Maaf Kamu admin ternyata");
-        if (m.isOwn) return repl("Oh tidak, kamu ownerku");
-        if (!isBotAdmin) return repl("Oh tidak, Bot not admin");
+        if (isAdmin) return repl("Admin Mah Bebas");
+        if (m.isOwn) return repl("Owner Mah Bebas");
+        if (!isBotAdmin) return repl("Aku Aja Bukan Admin");
         await conn.sendMessage(m.chat, {
           delete: {
             remoteJid: m.chat,

@@ -8,12 +8,12 @@ const handle = {
         if (budy.includes(`https://chat.whatsapp.com/${await conn.groupInviteCode(m.chat)}`)) return;
         await conn.sendteks(
           m.chat,
-          "[ ANTI LINK ]\ngroup ini dilengkapi dengan anti link\nanda melanggar larangan bot\nAnda berhak di kick",
+          "[ Anti Link ]\nGroup Ini Dilengkapi Dengan Anti Link\nKamu Melanggar Larangan\nKamu Akan Di Keluarkan",
           d.f1("Notifikasi Keamanan Group", "")
         );
-        if (isAdmin) return await repl("Maaf Kamu admin ternyata");
-        if (m.isOwn) return await repl("Oh tidak, kamu ownerku");
-        if (!isBotAdmin) return await repl("Oh tidak, Bot not admin");
+        if (isAdmin) return await repl("Eh Admin\nAdmin Mah Bebas");
+        if (m.isOwn) return await repl("Eh Owner\nOwner Mah Bebas");
+        if (!isBotAdmin) return await repl("Aku Aja Bukan Admin Hadeh....");
         await conn.sendMessage(m.chat, {
           delete: {
             remoteJid: m.chat,
