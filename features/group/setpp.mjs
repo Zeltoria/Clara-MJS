@@ -1,7 +1,7 @@
 const handle = {
   say: ["setpp", "setppgc"],
   category: "#group",
-  describe: "change photo profile group",
+  describe: "Mengubah Icon Grup",
   master: async (m, { q, conn, isAdmin, isBotAdmin, quoted, mime, repl }) => {
     if (!m.isGc) return repl(q.forgc);
     if (!isAdmin) return repl(q.admin);

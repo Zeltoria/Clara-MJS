@@ -3,11 +3,11 @@ import { format } from "util";
 
 const handle = {
   say: ["pull"],
-  category: "#system",
+  category: "#owner",
   describe: "",
   master: async (m, { conn, d }) => {
-    if (!m.isDev) return repl("perintah khusus developer");
-    await conn.sendteks(m.chat, "wait updating to server...", m);
+    if (!m.isDev) return repl("Lah??, Kamu Siapa?");
+    await conn.sendteks(m.chat, "Mengupdate Server..", m);
     await exec("git pull", (stderr, stdout) => {
       if (stderr) return conn.sendteks(m.chat, format(stderr), d.f1(stderr, ""));
       if (stdout) return conn.sendteks(m.chat, format(stdout), d.f1(stdout, ""));

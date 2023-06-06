@@ -2,19 +2,19 @@ import { writeFileSync } from "fs";
 import path from 'path'
 
 const handle = {
-  say: ["saveplugin", "sp"],
-  category: "#system",
+  say: ["saveplugin", "sf"],
+  category: "#owner",
   describe: "",
   master: async (m, { q, conn, repl, bot, db }) => {
     conn.file = conn.file ? conn.file : {};
-    if (!m.isDev) return repl("perintah khusus developer");
+    if (!m.isDev) return repl("Lah??, Kamu Siapa?");
     if (!m.quoted)
       return repl(
-        `Mau simpan plugin dengan command apa? reply teks script nya bang\n`
+        `Mau Simpan Plugin Dengan Dengan Perintah, Reply Teks Script Nya Sayang\n`
       );
-    if (!m.args[0]) return repl(`Mau simpan plugin di path apa?`);
+    if (!m.args[0]) return repl(`Mau Simpan Plugin Di Path apa?`);
       await writeFileSync(path.join(process.cwd(), 'features', `${m.args[0]}.mjs`), m.quoted.text);
-      await repl(`Sukses tersave di path ${m.args[0]}`);
+      await repl(`Sukses Menyimpan Di Path ${m.args[0]}`);
     }
 };
 

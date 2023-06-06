@@ -1,7 +1,7 @@
 const handle = {
   say: ["promote", "pm"],
   category: "#group",
-  describe: "promote user to admin group",
+  describe: "Promosikan Jabatan Menjadi Admin",
   master: async (m, { q, conn, isBotAdmin, isAdmin, repl }) => {
     if (!isAdmin && !m.isOwn) return repl(q.admin);
     if (!isBotAdmin) return repl(q.botadmin);

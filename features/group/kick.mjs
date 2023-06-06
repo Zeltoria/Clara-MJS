@@ -1,7 +1,7 @@
 const handle = {
   say: ["kick", "tendang"],
   category: "#group",
-  describe: "kick user dari dalam group",
+  describe: "Mengeluarkan Member Dari Group",
   master: async (m, { q, conn, isBotAdmin, isAdmin, repl, members }) => {
     if (!isAdmin && !m.isOwn) return repl(q.admin);
     if (!isBotAdmin) return repl(q.botadmin);
@@ -12,7 +12,7 @@ const handle = {
           await q.delay(2000);
           await conn.groupParticipantsUpdate(m.chat, [v.id], "remove");
         });
-      repl("sukses kikk all user");
+      repl("Sukses Mengeluarkan Semua Member");
     }
     let user = m.rtarget ?? m.mentionedJid ?? m.quoted?.sender ?? m.query.replace(/[^0-9]/g, "") + "@s.whatsapp.net";
     conn

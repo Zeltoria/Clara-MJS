@@ -4,16 +4,16 @@ const handle = {
   describe: "",
   master: async (m, { q, d, conn, repl, more, quoted, mime }) => {
     if (!m.isOwn) return repl(q.owner);
-    if (!m.query) return repl("berikan teks nya");
+    if (!m.query) return repl("Masukan Teksnya Sayang >,<");
     let all = Object.keys(await conn.groupFetchAllParticipating());
     let from = m.sender;
     conn.sendteks(
       m.chat,
-      `Sedang mengirim Broadcast ke grup ${all.length} selama ${(q.longbc * all.length) / 1000} detik`,
+      `Sedang Mengirim Broadcast Ke ${all.length} Grup, Selama ${(q.longbc * all.length) / 1000} Detik`,
       m
     );
     let teks =
-      "```--:--BROADCAST ADMIN--:--```\n\n" +
+      "```--:--Pengumuman--:--```\n\n" +
       m.query +
       "\n\n" +
       more +

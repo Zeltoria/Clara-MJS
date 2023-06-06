@@ -3,9 +3,9 @@ import { imgToStiker, vidToStiker } from "../../utils/lib/convert.media.lib.mjs"
 const handle = {
   say: ["sticker", "stiker", "s"],
   category: "#tools",
-  describe: "to convert media to sticker",
+  describe: "Untuk Membuat Sticker",
   master: async (m, { q, conn, d, quoted, mime, find, repl, db }) => {
-    let teks = `reply foto / kirim foto dengan caption .${m.command}`;
+    let teks = `Reply Atau Kirim Foto Dengan Caption .${m.command}`;
     let { b } = find;
     if (!quoted) return repl(teks);
     if (!/(image\/(jpe?g|png)|video\/(mp4|mov))/.test(mime)) return repl(teks);

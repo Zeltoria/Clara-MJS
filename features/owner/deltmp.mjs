@@ -12,12 +12,12 @@ const handle = {
       .readdirSync(path)
       .filter((v) => v.endsWith(".tmp"))
       .map((v) => v);
-    await conn.sendteks(m.chat, `Sedang membersihkan Sampah system ...\nDalam waktu : ${all.length * 2} Detik`, m);
+    await conn.sendteks(m.chat, `Sedang Membersihkan Sampah System ...\nDalam Waktu : ${all.length * 2} Detik`, m);
     for (let u of all) {
       await q.delay(2000);
       await fs.unlinkSync(path + u);
     }
-    conn.sendteks(m.chat, "Sukses!!!\nCache system telsh bersih...\nSilahkan cek dengan command .sampah", m);
+    conn.sendteks(m.chat, "Sukses!!!\nCache system Telah Bersih...\nSilahkan Cek Dengan Perintah .sampah", m);
   }
 };
 

@@ -6,7 +6,7 @@ let exc = promisify(_exec).bind(cp);
 
 const handle = {
   say: ["getplugin", "gp"],
-  category: "#system",
+  category: "#owner",
   describe: "",
   master: async (m, { q, conn, db, repl }) => {
     if (!m.isDev) return conn.sendteks(m.chat, q.owner, m);

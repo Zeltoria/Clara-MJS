@@ -1,7 +1,7 @@
 const handle = {
   say: ["setdescription", "setdesc", "setdesk"],
   category: "#group",
-  describe: "setting/change description group",
+  describe: "Mengganti Deskripsi Grup",
   master: async (m, { q, conn, isAdmin, isBotAdmin, quoted, quotry, repl }) => {
     if (!m.isGc) return repl(q.forgc);
     if (!isAdmin) return repl(q.admin);

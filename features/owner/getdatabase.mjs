@@ -10,7 +10,7 @@ const handle = {
   describe: "",
   master: async (m, { q, conn, d }) => {
     if (!m.isOwn) return repl(q.owner);
-    await conn.sendteks(m.chat, `sedang ambil...`, m);
+    await conn.sendteks(m.chat, `Sedang Mengambil...`, m);
     let _a = readdirSync(path),
       _b = zip.folder("db");
     for (let _c of _a) {

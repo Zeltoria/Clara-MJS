@@ -1,7 +1,7 @@
 const handle = {
   say: ["ht", "htag", "hidetag"],
   category: "#group",
-  describe: "tag hide in group",
+  describe: "Pengumuman Di Group",
   master: async (m, { q, conn, isAdmin, isBotAdmin, members, quoted, repl, db, bot, d }) => {
     if (!m.isGc) return repl(q.forgc);
     if (!isAdmin) return repl(q.admin);

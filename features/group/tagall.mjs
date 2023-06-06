@@ -1,7 +1,7 @@
 const handle = {
   say: ["tagall"],
   category: "#group",
-  describe: "tag all user in group",
+  describe: "Tag Semua Member Group",
   master: async (m, { q, conn, isAdmin, isBotAdmin, members, repl, db, bot }) => {
     if (!m.isGc) return repl(q.forgc);
     if (!isAdmin) return repl(q.admin);

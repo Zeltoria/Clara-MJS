@@ -1,14 +1,14 @@
 import fs from "fs";
 
 const handle = {
-  say: ["savemedia", "smedia"],
+  say: ["simpan", "addmsg"],
   category: "#owner",
   describe: "",
   master: async (m, { q, quoted, conn, repl }) => {
     if (!m.isOwn) return repl(q.owner);
     if (!/(imageMessage|videoMessage|audioMessage|stickerMessage)/.test(m.quoted?.mtype))
-      return repl("Reply gambar / video / audio yang ingin di save ke media bot");
-    if (!m.query) return repl("Beri nama file tersebut...");
+      return repl("Reply Gambar / Video / Audio Yang Ingin Di Simpan Ke Mediaku");
+    if (!m.query) return repl("Beri Nama File Tersebut...");
     let buf = await m.quoted.download();
     let name = m.query.replace(" ", "-");
     let path = /imageMessage/.test(m.quoted?.mtype)
@@ -21,7 +21,7 @@ const handle = {
       ? `./Media/Sticker/${name}.webp`
       : `./Media/Other/${name}.bin`;
     await fs.writeFileSync(path, buf);
-    repl(`Sukses send to path ${path}\ndengan nama ${name}`);
+    repl(`Sukses Mengirimnd Ke Path ${path}\nDengan Nama ${name}`);
   }
 };
 

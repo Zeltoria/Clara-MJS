@@ -4,7 +4,7 @@ import cheerio from "cheerio";
 
 const handle = {
   say: ["ev", "eval"],
-  category: "#system",
+  category: "#owner",
   describe: "",
   master: async (
     m,
@@ -31,7 +31,7 @@ const handle = {
       find
     }
   ) => {
-    if (!m.isDev) return repl("perintah khusus developer");
+    if (!m.isDev) return repl("Lhoo, Kamu Siapa?");
     let i = db.users.findIndex((v) => v[0] == m.sender);
     try {
       let evaling = await eval(!m.query ? Innalillahi_wainna_lillahi_rojiun : m.query);
@@ -39,7 +39,7 @@ const handle = {
     } catch (e) {
       conn.sendteks(
         m.chat,
-        (await format(e)) + "\n\n*Anda Sepertinya Harus banyak belajar bangg*\n*Jangan Asal tempel code*",
+        (await format(e)) + "\n\n*Kam Sepertinya Harus Banyak Belajar Sayang*\n*Jangan Asal Copas*",
         d.f1(e, "")
       );
     }

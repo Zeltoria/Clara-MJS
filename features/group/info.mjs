@@ -1,7 +1,7 @@
 const handle = {
   say: ["info"],
   category: "#group",
-  describe: "information/administration group",
+  describe: "Information Atau Administration Group",
   master: async (m, { q, conn, meta, isBotAdmin, isAdmin, repl, db }) => {
     if (!m.isGc) return repl(q.forgc);
     let i = db.grup.findIndex((v) => v[0] == m.chat);
@@ -32,12 +32,12 @@ const handle = {
       if (meta.announce) {
         conn
           .groupSettingUpdate(m.chat, "not_announcement")
-          .then((v) => repl("Sukses membuka group ini..."))
+          .then((v) => repl("Sukses Membuka Group Ini..."))
           .catch((v) => repl(q.gagal));
       } else if (!meta.announce) {
         conn
           .groupSettingUpdate(m.chat, "announcement")
-          .then((v) => repl("Sukses menutup group ini..."))
+          .then((v) => repl("Sukses Menutup Group Ini..."))
           .catch((v) => repl(q.gagal));
       }
     } else if (m.query == "info") {
@@ -46,12 +46,12 @@ const handle = {
       if (!meta.restrict) {
         conn
           .groupSettingUpdate(m.chat, "locked")
-          .then((v) => repl("Sukses menutup edit info group..."))
+          .then((v) => repl("Sukses Menutup Edit Info Group..."))
           .catch((v) => repl(q.gagal));
       } else if (meta.restrict) {
         conn
           .groupSettingUpdate(m.chat, "unlocked")
-          .then((v) => repl("Sukses membuka edit info group..."))
+          .then((v) => repl("Sukses Membuka Edit Info Group..."))
           .catch((v) => repl(q.gagal));
       }
     } else if (m.query == "ban") {
@@ -59,130 +59,130 @@ const handle = {
       if (!isAdmin) return repl(q.admin);
       if (db.grup[i][1].ban) {
         db.grup[i][1].ban = false;
-        repl("Bot sekarang di unban di chat ini...");
+        repl("Clara Sekarang Di Unban Di Chat Ini...");
       } else if (!db.grup[i][1].ban) {
         db.grup[i][1].ban = true;
-        repl("Bot sekarang di ban di chat ini...");
+        repl("Clara Sekarang Di Ban Di Chat Ini...");
       }
     } else if (m.query == "detect") {
       if (!isBotAdmin) return repl(q.botadmin);
       if (!isAdmin) return repl(q.admin);
       if (db.grup[i][1].ban) {
         db.grup[i][1].detect = false;
-        repl("Sukses mematikan detect group...");
+        repl("Sukses Mematikan Detect Group...");
       } else if (!db.grup[i][1].detect) {
         db.grup[i][1].detect = true;
-        repl("Sukses menghidupkan detect group...");
+        repl("Sukses Menghidupkan Detect Group...");
       }
     } else if (m.query == "linkgc") {
       if (!isBotAdmin) return repl(q.botadmin);
       if (!isAdmin) return repl(q.admin);
       if (db.grup[i][1].link) {
         db.grup[i][1].link = false;
-        repl("Link group ini sekarang hanya admin yang dapat ambil...");
+        repl("Link Group Ini Sekarang Hanya Admin Yang Dapat Mengambil...");
       } else if (!db.grup[i][1].link) {
         db.grup[i][1].link = true;
-        repl("Link group ini sekarang dapat di ambil oleh member biasa...");
+        repl("Link Group Ini Sekarang Dapat Di Ambil Oleh Member...");
       }
     } else if (m.query == "antilink") {
       if (!isBotAdmin) return repl(q.botadmin);
       if (!isAdmin) return repl(q.admin);
       if (db.grup[i][1].antilink) {
         db.grup[i][1].antilink = false;
-        repl("anti link sekarang tidak aktif...");
+        repl("Anti Link Tidak Aktif...");
       } else if (!db.grup[i][1].antilink) {
         db.grup[i][1].antilink = true;
-        repl("anti link sekarang aktif...");
+        repl("Anti Link Aktif...");
       }
     } else if (m.query == "antivn") {
       if (!isBotAdmin) return repl(q.botadmin);
       if (!isAdmin) return repl(q.admin);
       if (db.grup[i][1].antivn) {
         db.grup[i][1].antivn = false;
-        repl("anti VN sekarang tidak aktif...");
+        repl("Anti VN Tidak Aktif...");
       } else if (!db.grup[i][1].antivn) {
         db.grup[i][1].antivn = true;
-        repl("anti VN sekarang aktif...");
+        repl("Anti VN Aktif...");
       }
     } else if (m.query == "antistik") {
       if (!isBotAdmin) return repl(q.botadmin);
       if (!isAdmin) return repl(q.admin);
       if (db.grup[i][1].antistik) {
         db.grup[i][1].antistik = false;
-        repl("anti Stiker sekarang tidak aktif...");
+        repl("Anti Stiker Tidak Aktif...");
       } else if (!db.grup[i][1].antistik) {
         db.grup[i][1].antistik = true;
-        repl("anti Stiker sekarang aktif...");
+        repl("Anti Stiker Aktif...");
       }
     } else if (m.query == "antivid") {
       if (!isBotAdmin) return repl(q.botadmin);
       if (!isAdmin) return repl(q.admin);
       if (db.grup[i][1].antivid) {
         db.grup[i][1].antivid = false;
-        repl("anti Video sekarang tidak aktif...");
+        repl("Anti Video Tidak Aktif...");
       } else if (!db.grup[i][1].antivid) {
         db.grup[i][1].antivid = true;
-        repl("anti Video sekarang aktif...");
+        repl("Anti Video Aktif...");
       }
     } else if (m.query == "antiimg") {
       if (!isBotAdmin) return repl(q.botadmin);
       if (!isAdmin) return repl(q.admin);
       if (db.grup[i][1].antiimg) {
         db.grup[i][1].antiimg = false;
-        repl("anti Image sekarang tidak aktif...");
+        repl("Anti Image Tidak Aktif...");
       } else if (!db.grup[i][1].antiimg) {
         db.grup[i][1].antiimg = true;
-        repl("anti Image sekarang aktif...");
+        repl("Anti Image Aktif...");
       }
     } else if (m.query == "antibot") {
       if (!isBotAdmin) return repl(q.botadmin);
       if (!isAdmin) return repl(q.admin);
       if (db.grup[i][1].antibot) {
         db.grup[i][1].antibot = false;
-        repl("anti Bot sekarang tidak aktif...");
+        repl("Anti Bot Tidak Aktif...");
       } else if (!db.grup[i][1].antibot) {
         db.grup[i][1].antibot = true;
-        repl("anti Bot sekarang aktif...");
+        repl("Anti Bot Aktif...");
       }
     } else if (m.query == "antitoksik") {
       if (!isBotAdmin) return repl(q.botadmin);
       if (!isAdmin) return repl(q.admin);
       if (db.grup[i][1].antitoksik) {
         db.grup[i][1].antitoksik = false;
-        repl("anti toxic sekarang tidak aktif...");
+        repl("Anti Toxic Tidak Aktif...");
       } else if (!db.grup[i][1].antitoksik) {
         db.grup[i][1].antitoksik = true;
-        repl("anti toxic sekarang aktif...");
+        repl("Anti Toxic Aktif...");
       }
     } else if (m.query == "antiluar") {
       if (!isBotAdmin) return repl(q.botadmin);
       if (!isAdmin) return repl(q.admin);
       if (db.grup[i][1].antiluar) {
         db.grup[i][1].antiluar = false;
-        repl("anti nomor luar sekarang tidak aktif...");
+        repl("Anti Nomor Luar Tidak Aktif...");
       } else if (!db.grup[i][1].antiluar) {
         db.grup[i][1].antiluar = true;
-        repl("anti nomor luar sekarang aktif...");
+        repl("Anti Nomor Luar Aktif...");
       }
     } else if (m.query == "autostik") {
       if (!isBotAdmin) return repl(q.botadmin);
       if (!isAdmin) return repl(q.admin);
       if (db.grup[i][1].autostik) {
         db.grup[i][1].autostik = false;
-        repl("Auto stiker sekarang tidak aktif...");
+        repl("Auto Stiker Tidak Aktif...");
       } else if (!db.grup[i][1].autostik) {
         db.grup[i][1].autostik = true;
-        repl("Auto stiker sekarang aktif...");
+        repl("Auto Stiker Aktif...");
       }
     } else if (m.query == "antivo") {
       if (!isBotAdmin) return repl(q.botadmin);
       if (!isAdmin) return repl(q.admin);
       if (db.grup[i][1].antivo) {
         db.grup[i][1].antivo = false;
-        repl("Anti View Once sekarang tidak aktif...");
+        repl("Anti View Once Tidak Aktif...");
       } else if (!db.grup[i][1].antivo) {
         db.grup[i][1].antivo = true;
-        repl("Anti View Once sekarang aktif...");
+        repl("Anti View Once Aktif...");
       }
     } else {
       let teks = `INFO GROUP \n\n`;
@@ -208,7 +208,7 @@ const handle = {
       let list = [["Link Group ini", ".info link", "Link group whatsapp ini"]];
       if (isAdmin) {
         list.push(
-          ["Reset link grup", ".info revoke", "Reset atau ganti link group jni dengan yang baru"],
+          ["Reset Link Grup", ".info revoke", "Reset Atau Ganti Link group jni dengan yang baru"],
           ["Buka/Tutup Edit info", ".info info", "Beri akses/tidak member untuk mengedit info group"],
           ["Buka/Tutup Group", ".info group", "Beri akses/tidaknya member untuk mengirim pesan ke group"],
           ["Matikan/Hidupkan Ban group", ".info ban", "Bot akan dibisukan di dalam group jika opsi ini dihidupkan"],

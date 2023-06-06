@@ -5,7 +5,7 @@ const handle = {
   category: "#system",
   describe: "",
   master: async (m, { q, conn, repl }) => {
-    if (!m.isDev) return repl("perintah khusus developer");
+    if (!m.isDev) return repl("Lah Kamu Siapa?");
     var owner = q.developer;
     var user = m.mentionedJid[0]
       ? m.mentionedJid[0].split("@")[0]
@@ -17,7 +17,7 @@ const handle = {
       var newOwner = JSON.stringify(owner, null, 2);
       fs.writeFile(process.cwd() + "/Setting/owner.json", newOwner, (err) => {
         if (err) return repl("elorr");
-        repl(`Sukses add ${user} menjadi owner`);
+        repl(`Sukses Menambahkan ${user} Sebagai Owner`);
       });
     } else if (owner.includes(user)) {
       let position = owner.indexOf(user);
@@ -25,7 +25,7 @@ const handle = {
       var nowData = JSON.stringify(owner, null, 2);
       fs.writeFile(process.cwd() + "/Setting/owner.json", nowData, (err) => {
         if (err) return repl("elorr");
-        repl(`Sukses delete ${user} dari owner`);
+        repl(`Sukses Menghapus ${user} Sebagai Owner`);
       });
     }
   }

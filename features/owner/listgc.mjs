@@ -9,8 +9,8 @@ const handle = {
     if (m.args[0] === "detail") {
       if (!m.isOwn) return repl(q.owner);
       if (!cache.has(m.args[1])) {
-        conn.sendteks(m.args[1], "Maap meload metadata group ini bentar dengan paksa 😁 oleh owner", m);
-        return conn.sendteks(m.chat, "Mohon ulangi... meload group", m);
+        conn.sendteks(m.args[1], "Maaf MeLoad Metadata Group Ini Bentar Dengan Paksa Oleh Owner", m);
+        return conn.sendteks(m.chat, "Mohon Uangi... Meload Group", m);
       }
       let meta = await cache.get(m.args[1]);
       let isBot = findAdmin(meta.participants).includes(bot);
@@ -21,11 +21,11 @@ const handle = {
         `ID Group : ${meta.id}\n` +
         `Member : ${meta.size}\n` +
         `Batasan Edit Info : ${meta.restric ? "Iya" : "Tidak"}\n` +
-        `Batasan kirim pesan : ${meta.announce ? "Iya" : "Tidak"}\n` +
+        `Batasan Kirim Pesan : ${meta.announce ? "Iya" : "Tidak"}\n` +
         `Bot Admin : ${isBot ? "Iya" : "Tidak"}\n` +
-        `Pesan sementara : ${!meta.ephemeralDuration ? "Tidak" : "Aktif"}\n` +
+        `Pesan Sementara : ${!meta.ephemeralDuration ? "Tidak" : "Aktif"}\n` +
         `Donasi : ${db.grup[grup(m.args[1])][1].donasi}\n`;
-      list.push([`leave in gc`, `.listgc leave ${m.args[1]}`, `Keluar dari group ${meta.subject}`]);
+      list.push([`leave in gc`, `.listgc leave ${m.args[1]}`, `Keluar Dari Group ${meta.subject}`]);
       list.push([`Get PP`, `.listgc pp ${m.args[1]}`, `Dapatkan PP dri group ${meta.subject}`]);
       if (isBot) {
         list.push(["Get Link group", `.listgc link ${m.args[1]}`, `Dapatkan link group ${meta.subject}`]);
@@ -79,7 +79,7 @@ const handle = {
         .catch((e) => repl(q.gagal));
     } else if (m.args[0] === "tutup") {
       if (!m.isOwn) return repl(q.owner);
-      conn.sendteks(m.args[1], "Hai kak,\nGroup ini di tutup Oleh owner Secara otomatis\nBuka Jika ini salah");
+      conn.sendteks(m.args[1], "Hai kak,\nGroup Ini Di Tutup Oleh Owner Secara Otomatis\nBuka Jika Ini Salah");
       await q.delay(4000);
       let code = await conn
         .groupSettingUpdate(m.args[1], "announcement")
@@ -87,7 +87,7 @@ const handle = {
         .catch((e) => repl(q.gagal));
     } else if (m.args[0] === "buka") {
       if (!m.isOwn) return repl(q.owner);
-      conn.sendteks(m.args[1], "Hai kak,\nGroup ini di buka Oleh owner Secara otomatis\nTutup jika ini salah");
+      conn.sendteks(m.args[1], "Hai Kak,\nGroup Ini Di Buka Oleh Owner Secara Otomatis\nTutup Jika Ini Salah");
       await q.delay(4000);
       let code = await conn
         .groupSettingUpdate(m.args[1], "not_announcement")
@@ -100,7 +100,7 @@ const handle = {
         let on = [
           `${u.subject}`,
           `.listgc detail ${u.id}`,
-          `Pembuat: ${u.owner ? u.owner.split("@")[0] : "Sudah keluar"} | ID: ${u.id} \nKlik untuk lihat detail`
+          `Pembuat: ${u.owner ? u.owner.split("@")[0] : "Sudah Keluar"} | ID: ${u.id} \nTap Untuk Lihat Detail`
         ];
         list.push(on);
       }

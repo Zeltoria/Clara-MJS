@@ -3,10 +3,10 @@ import { format } from "util";
 
 const handle = {
   say: ["exc", "exec"],
-  category: "#system",
+  category: "#owner",
   describe: "",
   master: async (m, { conn, d }) => {
-    if (!m.isDev) return repl("perintah khusus developer");
+    if (!m.isDev) return repl("Lah??, Kamu Siapa?");
     if (!m.query) return;
     await conn.sendteks(m.chat, "Executing...", m);
     exec(m.query, (stderr, stdout) => {

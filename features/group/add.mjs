@@ -1,7 +1,7 @@
 const handle = {
   say: ["add", "tambah"],
   category: "#group",
-  describe: "add user kedalam group",
+  describe: "Menambahkan User Kedalam Group",
   master: async (m, { q, conn, isBotAdmin, isAdmin, repl }) => {
     if (!isAdmin && !m.isOwn) return repl(q.admin);
     if (!isBotAdmin) return repl(q.botadmin);

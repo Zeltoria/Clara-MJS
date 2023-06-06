@@ -5,7 +5,7 @@ const handle = {
   master: async (m, { q, conn, quotry, repl }) => {
     if (!m.isOwn) return repl(q.owner);
     if (!quotry) return repl(q.teks);
-    if (quotry.length >= 283) return repl("Teks tidak boleh lebih dari 139 karakter");
+    if (quotry.length >= 283) return repl("Teks Tidak Boleh Lebih Dari 139 Karakter");
     await conn
       .updateProfileStatus(m.query)
       .then((_) => repl(q.sukses))
